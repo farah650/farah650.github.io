@@ -3,8 +3,17 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Farah Ben Said – Ingénieure Big Data, IA &amp; Computer Vision</title>
-<meta name="description" content="Portfolio de Farah Ben Said, étudiante ingénieure Big Data &amp; IA : computer vision, data mining, BI.">
+<title>Farah Ben Said – Ingénieure Big Data &amp; IA</title>
+<meta name="description" content="Étudiante ingénieure en Big Data &amp; Intelligence Artificielle. Portfolio : computer vision, data mining, BI. Recherche un stage PFE en data science et data analysis.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%231a2540'/%3E%3Ctext x='32' y='43' font-family='Georgia%2Cserif' font-size='30' font-weight='700' text-anchor='middle' fill='%23c97b8a'%3EFB%3C/text%3E%3C/svg%3E">
+<meta property="og:type" content="website"><meta property="og:site_name" content="Farah Ben Said">
+<meta property="og:title" content="Farah Ben Said – Ingénieure Big Data &amp; IA"><meta property="og:description" content="Étudiante ingénieure en Big Data &amp; Intelligence Artificielle. Portfolio : computer vision, data mining, BI. Recherche un stage PFE en data science et data analysis.">
+<meta property="og:url" content="https://farah650.github.io/"><meta property="og:image" content="https://farah650.github.io/og-image.png">
+<meta property="og:image:width" content="1200"><meta property="og:image:height" content="630"><meta property="og:locale" content="fr_FR">
+<meta name="twitter:card" content="summary_large_image"><meta name="twitter:title" content="Farah Ben Said – Ingénieure Big Data &amp; IA"><meta name="twitter:description" content="Étudiante ingénieure en Big Data &amp; Intelligence Artificielle. Portfolio : computer vision, data mining, BI. Recherche un stage PFE en data science et data analysis."><meta name="twitter:image" content="https://farah650.github.io/og-image.png">
+<link rel="alternate" hreflang="fr" href="https://farah650.github.io/"><link rel="alternate" hreflang="en" href="https://farah650.github.io/en.html">
+
+
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
 <style>
   :root {
@@ -237,6 +246,17 @@
   @media(max-width:640px){.media-grid{grid-template-columns:1fr}}
   .media-cap{font-size:.8rem;color:var(--muted);margin-top:.45rem}
   .media-empty{margin-top:1rem;color:var(--muted);font-size:.9rem}
+
+  .cv-wrap{position:relative;display:inline-block}
+  .cv-btn{display:inline-flex;align-items:center;gap:.5rem;cursor:pointer;font-family:inherit}
+  .cv-btn .ic{width:1rem;height:1rem}
+  .cv-menu{position:absolute;top:calc(100% + 8px);left:0;min-width:270px;background:#fff;border:1px solid var(--border);border-radius:12px;box-shadow:0 14px 40px rgba(26,37,64,.14);padding:.4rem;display:none;z-index:50}
+  .cv-wrap.open .cv-menu{display:block}
+  .cv-menu a{display:block;padding:.7rem .9rem;border-radius:8px;text-decoration:none;color:var(--navy)}
+  .cv-menu a:hover{background:var(--rose-light)}
+  .cv-menu b{display:block;font-size:.88rem;font-weight:600}
+  .cv-menu span{display:block;font-size:.76rem;color:var(--muted);margin-top:2px}
+  .nav-links a.lang{border:1px solid var(--border);border-radius:100px;padding:.25rem .7rem;font-size:.75rem;letter-spacing:.08em}
 </style>
 </head>
 <body>
@@ -245,7 +265,7 @@
 <nav>
   <a href="#" class="nav-logo">Farah B.S.</a>
   <ul class="nav-links">
-    <li><a href="#expertise">Expertise</a></li><li><a href="#parcours">Parcours</a></li><li><a href="#projets">Projets</a></li><li><a href="#competences">Compétences</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li>
+    <li><a href="#expertise">Expertise</a></li><li><a href="#parcours">Parcours</a></li><li><a href="#projets">Projets</a></li><li><a href="#competences">Compétences</a></li><li><a href="#certifications">Certifications</a></li><li><a href="#contact">Contact</a></li><li><a href="en.html" class="lang" hreflang="en">EN</a></li>
   </ul>
 </nav>
 
@@ -259,6 +279,7 @@
     <div class="hero-ctas">
       <a href="#projets" class="btn btn-primary">Voir mes projets →</a>
       <a href="mailto:f.bnsaid5@gmail.com" class="btn btn-outline">Me contacter</a>
+      <div class="cv-wrap"><button type="button" class="btn btn-outline cv-btn" aria-haspopup="true" aria-expanded="false"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg> Télécharger mon CV</button><div class="cv-menu"><a href="cv/Farah_BenSaid_CV_Data.pdf" download><b>CV Data &amp; BI</b><span>Data mining · Business Intelligence</span></a><a href="cv/Farah_BenSaid_CV_IA.pdf" download><b>CV IA &amp; Computer Vision</b><span>Deep learning · Vision par ordinateur</span></a></div></div>
     </div>
   </div>
   <div class="hero-visual">
@@ -455,6 +476,9 @@ document.querySelectorAll('[data-media]').forEach(a=>a.addEventListener('click',
 md.addEventListener('click',e=>{if(e.target===md||e.target.classList.contains('modal-x'))close();});
 addEventListener('keydown',e=>{if(e.key==='Escape'&&!md.hidden)close();});
 })();
+(function(){const w=document.querySelector('.cv-wrap'),b=w.querySelector('.cv-btn');
+b.addEventListener('click',e=>{e.stopPropagation();const o=w.classList.toggle('open');b.setAttribute('aria-expanded',o);});
+document.addEventListener('click',()=>{w.classList.remove('open');b.setAttribute('aria-expanded',false);});})();
 </script>
 </body>
 </html>
