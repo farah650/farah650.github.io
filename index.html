@@ -229,7 +229,9 @@
   .modal-box h3{font-family:'Cormorant Garamond',serif;font-size:1.5rem;color:var(--navy);margin:0 2rem .4rem 0}
   .modal-x{position:absolute;top:.5rem;right:1rem;font-size:2rem;line-height:1;background:none;border:0;cursor:pointer;color:var(--navy)}
   .media-item{margin-top:1.2rem}
-  .media-item video,.media-item img{width:100%;display:block;border-radius:10px;background:#0f1628}
+  .media-item video,.media-item img{display:block;margin:0 auto;max-width:100%;border-radius:10px;background:#0f1628}
+  .media-item video{width:auto;height:auto;max-height:66vh}
+  .media-grid .media-item img{width:100%;max-height:60vh;object-fit:contain}
   .media-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1rem}
   .media-grid .media-item{margin-top:1.2rem}
   @media(max-width:640px){.media-grid{grid-template-columns:1fr}}
